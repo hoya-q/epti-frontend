@@ -5,7 +5,7 @@ import ContactSection from './components/ContactSection';
 import ExperienceSection from './components/ExperienceSection';
 import Footer from './components/Footer';
 import IntroSection from './components/IntroSection';
-import NavBar from './components/NavBar';
+import Header from './components/Header';
 import PricingSection from './components/PricingSection';
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-white font-noto">
-      <NavBar
+      <Header
         language={language}
         onLanguageChange={setLanguage}
         activeSection={activeSection}

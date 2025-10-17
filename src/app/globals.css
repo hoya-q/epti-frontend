@@ -285,3 +285,119 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* Studio specific styles */
+.studio-bg {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+}
+
+.studio-sidebar {
+  background-color: #596270;
+  opacity: 0.8;
+}
+
+.studio-main-bg {
+  background-color: #596270;
+  opacity: 0.9;
+}
+
+.studio-upload-area {
+  background-color: #596270;
+  opacity: 0.9;
+  border: 2px dashed rgb(177, 177, 177);
+}
+
+.studio-upload-area:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px dashed gray;
+}
+
+.studio-upload-area.dragover {
+  background-color: rgb(177, 177, 177);
+  border: 2px dashed gray;
+}
+
+.studio-pdf-viewer {
+  background-color: #596270;
+  opacity: 0.9;
+  border: 2px solid rgb(177, 177, 177);
+}
+
+.studio-button-primary {
+  background: #0ea5e9;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.studio-button-primary:hover {
+  background: #0284c7;
+}
+
+.studio-button-danger {
+  background: #ec1a1a;
+  color: #ffffff;
+}
+
+.studio-button-danger:hover {
+  filter: brightness(0.97);
+}
+
+.studio-progress-bar {
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.studio-progress-fill {
+  height: 100%;
+  background: #0284c7;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+  width: 0%;
+}
+
+.studio-radio-option {
+  border: 2px dashed #dee2e6;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.studio-radio-option:hover {
+  border-color: #0ea5e9;
+}
+
+.studio-radio-option input[type='radio']:checked + .studio-radio-text {
+  color: #0ea5e9;
+  border-color: #0ea5e9;
+}
+
+.studio-voice-input {
+  color: white;
+  background-color: #596270;
+  opacity: 0.9;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+}
+
+.studio-voice-input::placeholder {
+  color: #c0c7ce;
+  opacity: 1;
+}
+
+.studio-voice-input:focus {
+  outline: none;
+}
+
+/* PDF.js canvas styling */
+.studio-pdf-canvas {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation active state */
+.studio-nav-active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-right: 3px solid white;
+}
